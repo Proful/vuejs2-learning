@@ -3,6 +3,7 @@ var app = new Vue({
     data: {
         message: 'Hello Vue',
         tip: 'something',
-        toggle: false
+        toggle: false,
+        alphabets: ["a", "b", "c"]
     }
 });
