@@ -5,5 +5,10 @@ var app = new Vue({
         tip: 'something',
         toggle: false,
         alphabets: ["a", "b", "c"]
+    },
+    methods: {
+        onToggle: function () {
+            this.toggle = ! this.toggle
+        }
     }
 });

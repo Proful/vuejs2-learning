@@ -12,10 +12,13 @@
             This is great!
         </span>
         <br>
-        <span v-if="toggle">Show or Hide</span>
         <ul>
             <li v-for="alp in alphabets">{{ alp }}</li>
         </ul>
+
+        <span v-if="toggle">Show or Hide</span>
+        <br>
+        <button v-on:click="onToggle">Toggle</button>
     </div>
     <script src="App.js"></script>
 </body>
