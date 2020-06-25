@@ -6,25 +6,6 @@
 </head>
 <body>
     <div id="app">
-        {{ message }}
-        <br>
-        <span v-bind:title="tip">
-            This is great!
-        </span>
-        <br>
-        <ul>
-            <li v-for="alp in alphabets">{{ alp }}</li>
-        </ul>
-
-        <span v-if="toggle">Show or Hide</span>
-        <br>
-        <button v-on:click="onToggle">Toggle</button>
-        <br>
-        <div>
-            <p>Hi {{ name }}</p>
-            <input type="text" v-model="name">
-        </div>
-        <Hi name="James" />
     </div>
     <script src="App.js"></script>
 </body>
