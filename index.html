@@ -19,6 +19,11 @@
         <span v-if="toggle">Show or Hide</span>
         <br>
         <button v-on:click="onToggle">Toggle</button>
+        <br>
+        <div>
+            <p>Hi {{ name }}</p>
+            <input type="text" v-model="name">
+        </div>
     </div>
     <script src="App.js"></script>
 </body>

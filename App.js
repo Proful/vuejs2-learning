@@ -4,7 +4,8 @@ var app = new Vue({
         message: 'Hello Vue',
         tip: 'something',
         toggle: false,
-        alphabets: ["a", "b", "c"]
+        alphabets: ["a", "b", "c"],
+        name: "Steve"
     },
     methods: {
         onToggle: function () {
