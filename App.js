@@ -2,6 +2,7 @@ var app = new Vue({
     el: "#app",
     data: {
         message: 'Hello Vue',
-        tip: 'something'
+        tip: 'something',
+        toggle: false
     }
 });
