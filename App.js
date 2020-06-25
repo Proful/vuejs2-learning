@@ -1,5 +1,6 @@
 Vue.component("Hi", {
-  template: "<p>Hi there...</p>",
+    props: ['name'],
+    template: "<p>Hi {{ name }}</p>",
 });
 
 var app = new Vue({
