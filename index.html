@@ -6,7 +6,15 @@
 </head>
 <body>
     <div id="app">
+        <span v-once>{{ name }}</span>
+        <br>
         {{ name }}
+        <br>
+        <div>
+            I'm a {{ role }}
+            <br>
+            Actually, I'm a <span v-html="role"></span>
+        </div>
     </div>
     <script src="App.js"></script>
 </body>
