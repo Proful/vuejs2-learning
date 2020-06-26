@@ -8,13 +8,17 @@
     <div id="app">
         <span v-once>{{ name }}</span>
         <br>
-        {{ name }}
+        <span v-bind:id="empId">{{ name }}</span>
         <br>
         <div>
             I'm a {{ role }}
             <br>
             Actually, I'm a <span v-html="role"></span>
         </div>
+        <button v-bind:disabled="isButtonDisabled">Button</button>
+        <br>
+        {{ age + 5 }}
+        {{ isButtonDisabled ? "YES" : "NO"}}
     </div>
     <script src="App.js"></script>
 </body>
