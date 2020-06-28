@@ -1,9 +1,12 @@
 var app = new Vue({
     el: "#app",
     data: {
-        name: "Steve",
-        toggle: true,
-        url: "http://www.google.com"
+        msg: "Hi"
+    },
+    computed: {
+        upperMsg: function () {
+            return this.msg.toUpperCase()
+        }
     }
 })
 
