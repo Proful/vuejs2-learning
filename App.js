@@ -3,6 +3,12 @@ var app = new Vue({
   data: {
     msg: "Hi",
   },
+  watch: {
+    msg: function (newMsg, oldMsg) {
+        console.log(`${oldMsg} >> ${newMsg}`);
+
+    }
+  },
   computed: {
     upperMsg: {
       get: function () {
